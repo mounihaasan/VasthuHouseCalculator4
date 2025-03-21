@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: orange;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: url('https://i.imgur.com/ko4u6ZJ.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.input-section, .checkbox-section, .button-section {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    flex: 1;
+}
+
+.input-group input {
+    width: 45%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.checkbox-grid label {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #ff3333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: black;
+}
+
+.result-container {
+    overflow-x: auto; /* Prevents table from overflowing */
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #008000;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FFEB99;
+}
+tbody tr:nth-child(odd) {
+    background-color: #FFD633;
+}
