@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vastu House Ganitham Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vastu Ganitham</h1><div class="input-section">
+        <h2>Dimensions (Feet & Inches)</h2>
+        <div class="input-group">
+            <label>Min Length:</label>
+            <input type="number" id="aa" placeholder="Feet">
+            <input type="number" id="bb" placeholder="Inches">
+        </div>
+        <div class="input-group">
+            <label>Max Length:</label>
+            <input type="number" id="cc" placeholder="Feet">
+            <input type="number" id="dd" placeholder="Inches">
+        </div>
+        <div class="input-group">
+            <label>Min Breadth:</label>
+            <input type="number" id="vv" placeholder="Feet">
+            <input type="number" id="xx" placeholder="Inches">
+        </div>
+        <div class="input-group">
+            <label>Max Breadth:</label>
+            <input type="number" id="yy" placeholder="Feet">
+            <input type="number" id="zz" placeholder="Inches">
+        </div>
+        <div class="input-group">
+            <label>Nakshatra:</label>
+            <input type="number" id="oo" placeholder="Nakshatra">
+        </div>
+    </div>
+
+    <div class="checkbox-section">
+        <h2>Select any combination of necessary vargas to achieve favorable combined values</h2>
+        <div class="checkbox-grid">
+            <label><input type="checkbox" id="aysh"> Ayush</label>
+            <label><input type="checkbox" id="adym"> Adyam</label>
+            <label><input type="checkbox" id="karch"> Karch</label>
+            <label><input type="checkbox" id="aym"> Aym</label>
+            <label><input type="checkbox" id="nak"> Nakshatra</label>
+            <label><input type="checkbox" id="vrm"> Varam</label>
+            <label><input type="checkbox" id="tidhi"> Tidhi</label>
+            <label><input type="checkbox" id="dikpth"> Dikpati</label>
+            <label><input type="checkbox" id="amsa"> Amsa</label>
+            <label><input type="checkbox" id="ygm"> Yogam</label>
+            <label><input type="checkbox" id="karnm"> Karnam</label>
+            <label><input type="checkbox" id="thvm"> Thvm</label>
+            <label><input type="checkbox" id="kulm"> Kulam</label>
+            <label><input type="checkbox" id="lagnam"> Lagnam</label>
+            <label><input type="checkbox" id="kala"> Kala</label>
+            <label><input type="checkbox" id="grahamu"> Grahamu</label>
+        </div>
+    </div>
+
+    <div class="button-section">
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="clearInputs()">Clear</button>
+    </div>
+
+    <h2>Results including only the favorable values of all selected vargas combined</h2>
+    <div class="result-container">
+        <table id="result-table">
+            <thead>
+                <tr>
+                    <th>No of Outputs</th>
+                    <th>Dimensions</th>
+                    <th>Area</th>
+                    <th>Favorable values ofselectedvargascombined</th>
+                </tr>
+            </thead>
+            <tbody id="result-body"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
